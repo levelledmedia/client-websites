@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ruppert Landscape - Developing more than just beautiful landscapes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- HEADER / NAV -->
+  <header class="header">
+    <div class="container">
+      <div class="header__content">
+        <div class="logo">
+          <a href="/">Ruppert Landscape</a>
+        </div>
+        <nav class="main-nav">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#locations">Locations</a>
+          <a href="#careers">Careers</a>
+        </nav>
+        <div class="header__actions">
+          <a href="tel:02079460123" class="header__phone">020 7946 0123</a>
+          <a href="#contact" class="btn btn--primary">Contact Us Now</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__split">
+      <div class="hero__left">
+        <h1 class="hero__title">Get Your Free Estimate</h1>
+        <p class="hero__tagline">Professional commercial landscaping services tailored to your property's unique needs</p>
+
+        <form class="hero-form" id="estimateForm">
+          <div class="form-group">
+            <label for="fullName" class="visually-hidden">Full Name</label>
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              placeholder="Full Name *"
+              required
+              class="form-input"
+            >
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone" class="visually-hidden">Phone Number</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Phone Number *"
+                required
+                class="form-input"
+              >
+            </div>
+            <div class="form-group">
+              <label for="email" class="visually-hidden">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email Address *"
+                required
+                class="form-input"
+              >
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="projectDetails" class="visually-hidden">Project Details</label>
+            <textarea
+              id="projectDetails"
+              name="projectDetails"
+              placeholder="Brief project details (optional)"
+              rows="3"
+              class="form-input form-textarea"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--white">Get Free Estimate</button>
+        </form>
+      </div>
+      <div class="hero__right">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=800&fit=crop" alt="Ruppert Landscape landscape overview">
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS STRIP -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats__grid">
+        <div class="stat-card">
+          <div class="stat-card__icon">
+            <svg width="24" height="24" fill="currentColor"><use href="#icon-calendar"/></svg>
+          </div>
+          <div class="stat-card__content">
+            <div class="stat-card__number">25+</div>
+            <div class="stat-card__label">Years in Business</div>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__icon">
+            <svg width="24" height="24" fill="currentColor"><use href="#icon-play"/></svg>
+          </div>
+          <div class="stat-card__content">
+            <div class="stat-card__number">900+</div>
+            <div class="stat-card__label">Projects Completed</div>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__icon">
+            <svg width="24" height="24" fill="currentColor"><use href="#icon-star"/></svg>
+          </div>
+          <div class="stat-card__content">
+            <div class="stat-card__number">4.9</div>
+            <div class="stat-card__label">Review Rating</div>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__icon">
+            <svg width="24" height="24" fill="currentColor"><use href="#icon-heart"/></svg>
+          </div>
+          <div class="stat-card__content">
+            <div class="stat-card__number">100%</div>
+            <div class="stat-card__label">Commitment to Quality</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE INTRO -->
+  <section class="service-intro" id="services">
+    <div class="service-intro__grid">
+      <div class="service-intro__image">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop" alt="Commercial landscaping services">
+      </div>
+      <div class="service-intro__content">
+        <h2 class="section__h1">Commercial Landscaping Services</h2>
+        <p class="body-lg">We deliver comprehensive landscaping solutions for commercial properties of all sizes</p>
+        <p>From initial design and installation to ongoing maintenance, our team brings decades of expertise to every project. We understand the unique challenges of commercial properties and deliver solutions that enhance curb appeal while staying within budget.</p>
+        <p>Our commitment to quality and sustainability ensures your landscape investment continues to provide value for years to come.</p>
+        <div class="button-row">
+          <a href="#services" class="btn btn--primary">View Our Services</a>
+          <a href="#quote" class="btn btn--outline">Request a Quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATIONS WE COVER -->
+  <section class="coverage-band">
+    <div class="container">
+      <div class="section-header section-header--inverse">
+        <div>
+          <h2 class="section__h1">Our Services</h2>
+          <p class="section__subtext">Comprehensive landscaping solutions for every need</p>
+        </div>
+        <a href="#coverage" class="btn btn--ghost-white">View All Services</a>
+      </div>
+      <div class="coverage-grid">
+        <article class="coverage-card">
+          <div class="coverage-card__image">
+            <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=600&h=400&fit=crop" alt="Landscape Design">
+          </div>
+          <div class="coverage-card__body">
+            <h3 class="coverage-card__title">Landscape Design</h3>
+            <p class="coverage-card__description">Custom designs tailored to your property</p>
+          </div>
+        </article>
+        <article class="coverage-card">
+          <div class="coverage-card__image">
+            <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=600&h=400&fit=crop" alt="Lawn Maintenance">
+          </div>
+          <div class="coverage-card__body">
+            <h3 class="coverage-card__title">Lawn Maintenance</h3>
+            <p class="coverage-card__description">Professional care to keep your grounds pristine</p>
+          </div>
+        </article>
+        <article class="coverage-card">
+          <div class="coverage-card__image">
+            <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=600&h=400&fit=crop" alt="Irrigation Systems">
+          </div>
+          <div class="coverage-card__body">
+            <h3 class="coverage-card__title">Irrigation Systems</h3>
+            <p class="coverage-card__description">Efficient watering solutions for healthy landscapes</p>
+          </div>
+        </article>
+        <article class="coverage-card">
+          <div class="coverage-card__image">
+            <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600&h=400&fit=crop" alt="Seasonal Services">
+          </div>
+          <div class="coverage-card__body">
+            <h3 class="coverage-card__title">Seasonal Services</h3>
+            <p class="coverage-card__description">Year-round care including snow removal</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES / CULTURE -->
+  <section class="values-split">
+    <div class="values-split__grid">
+      <div class="values-split__content">
+        <h2 class="section__h1">Putting People First</h2>
+        <p class="body-lg">Our team members are the foundation of our success</p>
+        <p>We believe in investing in our people through comprehensive training, competitive benefits, and a culture of respect and opportunity. Our employee-first approach creates teams that deliver exceptional results for our clients while building rewarding careers.</p>
+        <div class="button-row">
+          <a href="#values" class="btn btn--primary">Learn About our Values</a>
+          <a href="#careers" class="btn btn--outline">Join the Team</a>
+        </div>
+      </div>
+      <div class="values-split__image">
+        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&h=600&fit=crop" alt="Ruppert Landscape team">
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO TEASER -->
+  <section class="portfolio-teaser" id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <h2 class="section__h1">Our Work</h2>
+          <p class="section__subtext">Transforming commercial properties across the region</p>
+        </div>
+        <a href="#portfolio" class="btn btn--ghost-white">View Our Portfolio</a>
+      </div>
+      <div class="portfolio-grid">
+        <article class="portfolio-card">
+          <div class="portfolio-card__image">
+            <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=500&h=400&fit=crop" alt="The Mather">
+          </div>
+          <h3 class="portfolio-card__title">The Mather</h3>
+          <p class="portfolio-card__category">Commercial Property Transformation</p>
+        </article>
+        <article class="portfolio-card">
+          <div class="portfolio-card__image">
+            <img src="https://images.unsplash.com/photo-1598902108854-10e335adac99?w=500&h=400&fit=crop" alt="Fair Hill Racetrack">
+          </div>
+          <h3 class="portfolio-card__title">Fair Hill Racetrack & Special Event Zone</h3>
+          <p class="portfolio-card__category">Large-Scale Grounds Management</p>
+        </article>
+        <article class="portfolio-card">
+          <div class="portfolio-card__image">
+            <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=500&h=400&fit=crop" alt="3350 Peachtree">
+          </div>
+          <h3 class="portfolio-card__title">3350 Peachtree</h3>
+          <p class="portfolio-card__category">Corporate Campus Design</p>
+        </article>
+        <article class="portfolio-card">
+          <div class="portfolio-card__image">
+            <img src="https://images.unsplash.com/photo-1591825729269-caeb344f6df2?w=500&h=400&fit=crop" alt="Perimeter Summit">
+          </div>
+          <h3 class="portfolio-card__title">Perimeter Summit</h3>
+          <p class="portfolio-card__category">Year-Round Landscape Care</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials-section">
+    <div class="container">
+      <h2 class="section__h1 text-center">What People are Saying</h2>
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <svg width="16" height="16" fill="currentColor"><use href="#icon-star"/></svg>
+            <svg width="16" height="16" fill="currentColor"><use href="#icon-star"/></svg>
+            <svg width="16" height="16" fill="currentColor"><use href="#icon-star"/></svg>
+            <svg width="16" height="16" fill="currentColor"><use href="#icon-star"/></svg>
+            <svg width="16" height="16" fill="currentColor"><use href="#icon-star"/></svg>
+          </div>
+          <blockquote class="testimonial-card__quote">
+            "The professionalism and attention to detail they bring to every project is outstanding. Our property has never looked better, and our residents consistently compliment the beautiful grounds."
+          </blockquote>
+          <cite class="testimonial-card__cite">
+            <strong>Rose Spencer</strong>
+            <span class="testimonial-card__role">Portfolio Community Manager</span>
+          </cite>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <svg width="16" height="16" fill="currentColor"><use href="#icon-star"/></svg>
+            <svg width="16" height="16" fill="currentColor"><use href="#icon-star"/></svg>
+            <svg width="16" height="16" fill="currentColor"><use href="#icon-star"/></svg>
+            <svg width="16" height="16" fill="currentColor"><use href="#icon-star"/></svg>
+            <svg width="16" height="16" fill="currentColor"><use href="#icon-star"/></svg>
+          </div>
+          <blockquote class="testimonial-card__quote">
+            "We've worked with several landscaping companies over the years, but none compare to the level of service and expertise we receive. They truly understand commercial properties."
+          </blockquote>
+          <cite class="testimonial-card__cite">
+            <strong>Michael Chen</strong>
+            <span class="testimonial-card__role">Facilities Director</span>
+          </cite>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <svg width="16" height="16" fill="currentColor"><use href="#icon-star"/></svg>
+            <svg width="16" height="16" fill="currentColor"><use href="#icon-star"/></svg>
+            <svg width="16" height="16" fill="currentColor"><use href="#icon-star"/></svg>
+            <svg width="16" height="16" fill="currentColor"><use href="#icon-star"/></svg>
+            <svg width="16" height="16" fill="currentColor"><use href="#icon-star"/></svg>
+          </div>
+          <blockquote class="testimonial-card__quote">
+            "Their team is always responsive, professional, and goes above and beyond. The quality of their work speaks for itself. Highly recommend for any commercial landscaping needs."
+          </blockquote>
+          <cite class="testimonial-card__cite">
+            <strong>Jennifer Martinez</strong>
+            <span class="testimonial-card__role">Property Manager</span>
+          </cite>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <svg width="16" height="16" fill="currentColor"><use href="#icon-star"/></svg>
+            <svg width="16" height="16" fill="currentColor"><use href="#icon-star"/></svg>
+            <svg width="16" height="16" fill="currentColor"><use href="#icon-star"/></svg>
+            <svg width="16" height="16" fill="currentColor"><use href="#icon-star"/></svg>
+            <svg width="16" height="16" fill="currentColor"><use href="#icon-star"/></svg>
+          </div>
+          <blockquote class="testimonial-card__quote">
+            "Outstanding results every single time. Their crew is knowledgeable, efficient, and respectful of our tenants. We've been working together for five years and couldn't be happier."
+          </blockquote>
+          <cite class="testimonial-card__cite">
+            <strong>David Thompson</strong>
+            <span class="testimonial-card__role">Commercial Real Estate Director</span>
+          </cite>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <svg width="16" height="16" fill="currentColor"><use href="#icon-star"/></svg>
+            <svg width="16" height="16" fill="currentColor"><use href="#icon-star"/></svg>
+            <svg width="16" height="16" fill="currentColor"><use href="#icon-star"/></svg>
+            <svg width="16" height="16" fill="currentColor"><use href="#icon-star"/></svg>
+            <svg width="16" height="16" fill="currentColor"><use href="#icon-star"/></svg>
+          </div>
+          <blockquote class="testimonial-card__quote">
+            "From seasonal color changes to snow removal, they handle everything with precision. Their proactive communication and competitive pricing make them our go-to landscaping partner."
+          </blockquote>
+          <cite class="testimonial-card__cite">
+            <strong>Sarah Johnson</strong>
+            <span class="testimonial-card__role">Operations Manager</span>
+          </cite>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <svg width="16" height="16" fill="currentColor"><use href="#icon-star"/></svg>
+            <svg width="16" height="16" fill="currentColor"><use href="#icon-star"/></svg>
+            <svg width="16" height="16" fill="currentColor"><use href="#icon-star"/></svg>
+            <svg width="16" height="16" fill="currentColor"><use href="#icon-star"/></svg>
+            <svg width="16" height="16" fill="currentColor"><use href="#icon-star"/></svg>
+          </div>
+          <blockquote class="testimonial-card__quote">
+            "The transformation they've created at our corporate campus is remarkable. Visitors regularly comment on how beautiful our grounds look. Best decision we made for our property."
+          </blockquote>
+          <cite class="testimonial-card__cite">
+            <strong>Robert Williams</strong>
+            <span class="testimonial-card__role">Campus Facilities Coordinator</span>
+          </cite>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION / MAP -->
+  <section class="location-section" id="locations">
+    <div class="container">
+      <h2 class="section__h1">Find Us</h2>
+      <div class="location-grid">
+        <div class="location-content">
+          <p class="body-lg">Visit our office or reach out to discuss your commercial landscaping needs. We're here to help transform your property with expert service and dedicated care.</p>
+
+          <div class="location-details">
+            <h4 class="location-details__heading">Our Office</h4>
+            <p class="location-details__address">123 Landscape Way<br>Laytonsville, MD 20882</p>
+            <p class="location-details__contact">
+              <strong>Phone:</strong> (301) 987-0100<br>
+              <strong>Email:</strong> info@ruppertlandscape.com
+            </p>
+          </div>
+
+          <div class="location-cta">
+            <a href="#contact" class="btn btn--primary">Request a Quote</a>
+            <a href="#contact" class="btn btn--outline">Contact Us</a>
+          </div>
+        </div>
+        <div class="location-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3094.8449384469677!2d-77.15625!3d39.21111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMznCsDEyJzQwLjAiTiA3N8KwMDknMjIuNSJX!5e0!3m2!1sen!2sus!4v1234567890"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Ruppert Landscape Office Location">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__row-1">
+        <div class="footer__brand">
+          <div class="footer__logo">Ruppert Landscape</div>
+          <p class="footer__tagline">Developing more than just beautiful landscapes</p>
+        </div>
+        <div class="footer__contact">
+          <h3 class="footer__heading">Corporate Office</h3>
+          <p>123 Landscape Way, Laytonsville, MD 20882</p>
+          <p>Phone: (301) 987-0100</p>
+          <p>Email: info@ruppertlandscape.com</p>
+          <div class="social-icons social-icons--footer">
+            <a href="#" aria-label="Facebook"><svg width="18" height="18" fill="currentColor"><use href="#icon-facebook"/></svg></a>
+            <a href="#" aria-label="LinkedIn"><svg width="18" height="18" fill="currentColor"><use href="#icon-linkedin"/></svg></a>
+            <a href="#" aria-label="Twitter"><svg width="18" height="18" fill="currentColor"><use href="#icon-twitter"/></svg></a>
+            <a href="#" aria-label="YouTube"><svg width="18" height="18" fill="currentColor"><use href="#icon-youtube"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__row-2">
+        <div class="footer__links">
+          <h4 class="footer__links-heading">Company</h4>
+          <a href="#about">About Us</a>
+          <a href="#careers">Careers</a>
+          <a href="#contact">Contact</a>
+          <a href="#news">News &amp; Blog</a>
+        </div>
+        <div class="footer__links">
+          <h4 class="footer__links-heading">Services</h4>
+          <a href="#design">Landscape Design</a>
+          <a href="#maintenance">Lawn Maintenance</a>
+          <a href="#irrigation">Irrigation Systems</a>
+          <a href="#seasonal">Seasonal Services</a>
+        </div>
+        <div class="footer__links">
+          <h4 class="footer__links-heading">Resources</h4>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#faqs">FAQs</a>
+          <a href="#quote">Get a Quote</a>
+          <a href="#testimonials">Testimonials</a>
+        </div>
+        <div class="footer__links">
+          <h4 class="footer__links-heading">Legal</h4>
+          <a href="#privacy">Privacy Policy</a>
+          <a href="#terms">Terms of Service</a>
+          <a href="#accessibility">Accessibility</a>
+        </div>
+      </div>
+      <div class="footer__legal">
+        <p>© 2025 Ruppert Landscape. All rights reserved. | <a href="#privacy">Privacy Policy</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SVG ICON SPRITE -->
+  <svg style="display:none">
+    <symbol id="icon-facebook" viewBox="0 0 24 24">
+      <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+    </symbol>
+    <symbol id="icon-linkedin" viewBox="0 0 24 24">
+      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+    </symbol>
+    <symbol id="icon-twitter" viewBox="0 0 24 24">
+      <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+    </symbol>
+    <symbol id="icon-youtube" viewBox="0 0 24 24">
+      <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+    </symbol>
+    <symbol id="icon-search" viewBox="0 0 24 24">
+      <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+    </symbol>
+    <symbol id="icon-calendar" viewBox="0 0 24 24">
+      <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zM5 8V6h14v2H5zm2 4h10v2H7v-2z"/>
+    </symbol>
+    <symbol id="icon-users" viewBox="0 0 24 24">
+      <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
+    </symbol>
+    <symbol id="icon-map" viewBox="0 0 24 24">
+      <path d="M20.5 3l-.16.03L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5c0 .28.22.5.5.5l.16-.03L9 18.9l6 2.1 5.64-1.9c.21-.07.36-.25.36-.48V3.5c0-.28-.22-.5-.5-.5zM15 19l-6-2.11V5l6 2.11V19z"/>
+    </symbol>
+    <symbol id="icon-heart" viewBox="0 0 24 24">
+      <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+    </symbol>
+    <symbol id="icon-play" viewBox="0 0 24 24">
+      <path d="M8 5v14l11-7z"/>
+    </symbol>
+    <symbol id="icon-star" viewBox="0 0 24 24">
+      <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+    </symbol>
+  </svg>
+
+  <script src="script.js"></script>
+</body>
+</html>
